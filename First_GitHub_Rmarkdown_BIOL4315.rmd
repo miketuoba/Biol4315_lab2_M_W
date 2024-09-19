@@ -39,4 +39,13 @@ dpoints <- dune_nmds$points
 
 ```
 
+Create a scatterplot for dune dataset after NMDS
+```{r plotting, message=FALSE, warning=FALSE, results = 'hide'}
+dpoints <- data.frame(dpoints)
+scatterplot_dune <- ggplot(data = dpoints, mapping = aes(MDS1, MDS2)) +
+  geom_point() +
+  ggtitle("Scatterplot of MDS1 vs MDS2 for dune dataset after NMDS") + 
+  theme_bw()
 
+ggsave("scatterplot.pdf", plot = scatterplot_dune)
+```
