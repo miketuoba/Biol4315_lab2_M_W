@@ -23,3 +23,11 @@ library(vegan)
 library(ggplot2)
 
 ```
+
+Load Dune dateset and log1p transform it
+```{r dune}
+data(dune)
+dune2 <- dune
+dune2_log1p <- log1p(dune2)  # log1p transform dune
+
+```
