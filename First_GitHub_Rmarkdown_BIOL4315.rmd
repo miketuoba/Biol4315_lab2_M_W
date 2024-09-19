@@ -10,3 +10,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # How to connect an R project to your GitHub Account
+
+Install packages of "vegan" and "ggplot2" and load them.
+```{r loading packages, message=FALSE, warning=FALSE, eval = T, results = 'hide'}
+# install packages first
+install.packages('vegan',
+    repos = c('https://vegandevs.r-universe.dev','https://cloud.r-project.org'))
+install.packages("ggplot2", repos = 'https://cloud.r-project.org')
+
+# load packages
+library(vegan)
+library(ggplot2)
+
+```
