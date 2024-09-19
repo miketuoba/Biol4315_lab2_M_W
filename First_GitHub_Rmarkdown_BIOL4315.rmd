@@ -31,3 +31,12 @@ dune2 <- dune
 dune2_log1p <- log1p(dune2)  # log1p transform dune
 
 ```
+
+Get the nmds from dune dataset and the points
+```{r nmds, message=FALSE, warning=FALSE, results = 'hide'}
+dune_nmds <- metaMDS(dune2)
+dpoints <- dune_nmds$points
+
+```
+
+
